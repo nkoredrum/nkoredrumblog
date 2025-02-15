@@ -1,0 +1,19 @@
+/* ====================
+   Footer
+   ==================== */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+footer a:hover {
+    color: #fff;
+}

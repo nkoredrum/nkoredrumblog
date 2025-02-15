@@ -7,15 +7,61 @@
   <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
-  <header>
-    <h1><a href="/">Nkore Drum Blog</a></h1>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about/">About</a></li>
-      </ul>
-    </nav>
-  </header>
+ <header class="site-header">
+        <div class="container">
+          <div class="header-content">
+            <!-- Logo & Title Section -->
+            <div class="logo-title">
+              <a href="index.html" class="logo-link">
+                <img src="assets/images/logo.jpg" alt="Nkore Drum Logo" class="logo">
+                <h1 class="site-title">NKORE DRUM</h1>
+              </a>
+            </div>
+      
+            <!-- Navigation Section -->
+            <nav class="main-nav">
+              <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="news.html" class="nav-link">News</a></li>
+                
+                <!-- Sports Dropdown -->
+                <li class="dropdown">
+                  <a href="sports.html" class="nav-link">Sports ▾</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="sports-football.html">Football</a></li>
+                    <li><a href="sports-athletics.html">Athletics</a></li>
+                    <li><a href="sports-rugby.html">Rugby</a></li>
+                    <li><a href="sports-basketball.html">Basketball</a></li>
+                  </ul>
+                </li>
+                
+                <li><a href="entertainment.html" class="nav-link">Entertainment</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="business.html" class="nav-link">Business</a></li>
+                
+                <!-- Culture Dropdown -->
+                <li class="dropdown">
+                  <a href="culture.html" class="nav-link">Culture & Heritage ▾</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="culture-history.html">History</a></li>
+                    <li><a href="culture-traditions.html">Traditions</a></li>
+                    <li><a href="culture-languages.html">Languages</a></li>
+                  </ul>
+                </li>
+                
+                <li><a href="contactus.html" class="nav-link">Contact</a></li>
+              </ul>
+      
+              <!-- Hamburger Menu for Mobile -->
+              <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
   <main>
     {{ content | safe }}
   </main>
